@@ -13,13 +13,27 @@
   </style>
   </head>
   <body>
+    <!--Navbat-->
+    <nav class="navbar navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container-fluid">
+           <a class="navbar-brand" href="#">Meniara</a>  
+        </div>
+    </nav>
+    <div style="height:56px"></div>
     <div class="container">
     <h1 class="text-center mt-2 mb-4" >{{company_name}} Bsissa</h1>
     <img id="banner" src="https://f715a65d-31e5-44b8-b328-1261ab467a00-00-1m0xj6oi4poca.kirk.replit.dev:5000/static/img.jpg" class="img-fluid">
     <h2 class="text-center mt-2 mb-4">About Meniara</h2>
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
     <p class="lead">
       Hello, my name is Meniara Bsissa. I'm 25 years old and recently earned my Master's degree in Machine Learning and Data Mining from the Faculty of Economics and Management in Sfax, Tunisia.
     </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+    <img src="static/work.jpg" style="height:320px; border-radius:4px;">
+        </div>
+      </div>
     <h2 class="text-center">Open Position</h2>
 
       <div>
@@ -28,10 +42,12 @@
         {% endfor %}
       </div>
       <div class="text-center">
-    <button class="btn btn-primary btn-lg">Contuct Us</button>
-        <p class="mt-4">Copyright 2024 Meniara</p>
+    <a href="mailto:meniara@gmail.com subject=Question about jobs" class="btn btn-primary btn-lg">Contuct Us</a>
       </div>
       </div>
-    
+
+  <footer class=" p-4 text-blacl mt-6">
+    Copyright 2024 Meniara</a>
+    </footer>
   </body>
 </html>
